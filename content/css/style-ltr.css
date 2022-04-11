@@ -1,0 +1,48 @@
+.whats-app-btn {
+  left: 50px;
+  right: auto;
+}
+
+.header .header-slider .owl-dots {
+  right: 35%;
+  left: auto;
+
+}
+
+.services-section .services {
+  padding-left: 15px;
+  padding-right: auto;
+
+}
+
+
+.faq-section .faq .accordion .accordion-item .accordion-button::after {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.contact-section .row--edit .col--edit-2 {
+  padding-left: auto;
+  padding-right: 0;
+}
+
+.translation-service-page .translation-service form .input-wrap select {
+  background-position: right 5% center;
+
+}
+
+.footer ul li::before {
+  left: -5px;
+  right: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .contact-section .row--edit .col--edit-2 {
+    padding-right: 0.75rem;
+    padding-left: auto;
+  }
+  .whats-app-btn {
+    left: 10px;
+    right: auto;
+  }
+}

@@ -1,0 +1,19 @@
+.whats-app-btn {
+  @extend.flex-d;
+  justify-content: center;
+  position: fixed;
+  bottom: 15px;
+  right: 50px;
+  left: auto;
+  z-index: 999;
+
+  svg {
+    background-color: #27A737;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+  }
+}

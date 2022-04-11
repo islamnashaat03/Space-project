@@ -1,0 +1,47 @@
+.faq-section {
+  padding: $padding;
+  h3 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .faq {
+    padding: 40px 0;
+    // margin-bottom: 50px;
+
+    .accordion {
+      .accordion-item {
+        margin: 20px 0;
+
+        .accordion-button {
+          text-align: start;
+          max-height: 65px;
+          line-height: 2;
+          overflow: hidden;
+          font-size: 18px;
+
+          &:focus {
+            box-shadow: none;
+          }
+
+          &::after {
+            margin-left: 0;
+            margin-right: auto;
+          }
+
+          &:not(.collapsed) {
+            color: $darkGreenColor;
+            background-color: transparent;
+
+            &::after {
+              background-image: url('../images/download.svg');
+            }
+          }
+
+        }
+
+
+      }
+    }
+  }
+}

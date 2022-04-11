@@ -1,0 +1,54 @@
+.polls-page {
+  .polls-section {
+    padding: $padding;
+
+    .input-wrap {
+      margin-bottom: 30px;
+
+      h3 {
+        font-size: calc((22px + (28 - 22) * ((100vw - 1366px) / (1920 - 1366))));
+        margin-bottom: 30px
+      }
+
+      .polls {
+        @extend.flex-d;
+        justify-content: space-between;
+        gap: 25px;
+        flex-wrap: wrap;
+
+        .poll {
+          @extend.flex-d;
+          justify-content: center;
+          gap: 10px;
+
+          input[type='radio'] {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            border: 2px solid $darkGreenColor;
+            border-radius: 50%;
+            outline: none;
+            @extend.flex-d;
+            justify-content: center;
+
+            &::before {
+              content: '';
+              display: block;
+              width: 80%;
+              height: 80%;
+              border-radius: 50%;
+            }
+
+            &:checked {
+              &::before {
+                background: green;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}

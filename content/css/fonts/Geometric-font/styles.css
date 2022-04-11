@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'geometric-font';
+  src: url(./geometric-font.eot);
+  src: url(./geometric-font.eot?#iefix) format('embedded-opentype'),
+       url(./geometric-font.otf) format('otf'),
+       url(./geometric-font.svg#geometric-font) format('svg'),
+       url(./geometric-font.ttf) format('truetype'),
+       url(./geometric-font.woff) format('woff'),
+       url(./geometric-font.woff2) format('woff2');
+}

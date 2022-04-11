@@ -1,0 +1,44 @@
+.about-page {
+  .services-section {
+    padding: 40px 0 0 0;
+
+    .col--edit {
+      margin-bottom: 30px;
+
+      .service {
+        text-align: center;
+
+        .image-wrap {
+          width: fit-content;
+          padding: 15px;
+          margin: auto;
+          margin-bottom: 20px;
+          border-radius: 15px;
+        }
+
+        h5 {
+          color: $textColor;
+          font-weight: bold;
+          margin-bottom: 15px;
+        }
+
+        .text {
+          color: $lightTextColor;
+          line-height: 2;
+          font-weight: normal;
+          margin-bottom: 0;
+        }
+      }
+
+      .services-slider {
+        .item {
+          .image-wrap {
+            height: 400px;
+
+
+          }
+        }
+      }
+    }
+  }
+}

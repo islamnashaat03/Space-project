@@ -1,0 +1,143 @@
+.nav-bar {
+  padding: 15px 0;
+  background-color: $lightGreenColor;
+
+  .nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+
+    .navbar-brand {
+      img {
+        width: 100px;
+      }
+    }
+
+    .navbar-links {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+
+      li {
+        padding: 10px;
+        position: relative;
+
+        a {
+          color: $lightTextColor;
+          transition: $transtion;
+          position: relative;
+          font-weight: bold;
+
+          &::after {
+            transition: $transtion;
+            width: 0;
+            height: 2px;
+            background-color: $darkGreenColor;
+            position: absolute;
+            content: "";
+            bottom: -15px;
+            right: 0;
+            left: 0;
+            margin: auto;
+          }
+
+          &.active {
+            color: $darkGreenColor;
+            transition: $transtion;
+
+            &::after {
+              width: 100%;
+              transition: $transtion;
+            }
+          }
+
+        }
+
+        &:hover {
+          a {
+            color: $darkGreenColor;
+            transition: $transtion;
+
+            &::after {
+              width: 100%;
+              transition: $transtion;
+            }
+
+          }
+        }
+
+
+      }
+
+      .all-courses-link {
+
+        position: relative;
+        .courses-submenu {
+          @extend.flex-d;
+          flex-direction: column;
+          position: absolute;
+          top: 47px;
+          width: 200%;
+          z-index: 23;
+          background-color: $lightGreenColor;
+          box-shadow: 0px 0px 10px 0px rgba(238, 238, 238, 0.75);
+          opacity: 0;
+          visibility: hidden;
+          transition: $transtion;
+
+          li {
+            padding: 15px 10px;
+
+            &:hover {}
+
+            a {
+              &:after {
+                content: none;
+                color: $darkGreenColor;
+              }
+            }
+          }
+
+        }
+
+        &:hover {
+          .courses-submenu {
+            opacity: 1;
+            visibility: visible;
+            transition: $transtion;
+
+            a {
+              color: $textColor;
+
+              &:hover,
+              &.active {
+                color: $darkGreenColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .languages {
+      color: $textColor;
+
+      .lang-links {
+        position: relative;
+
+        .lang-link {
+          @extend.flex-d;
+          gap: 5px;
+
+          &:after {
+            content: "\f107";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

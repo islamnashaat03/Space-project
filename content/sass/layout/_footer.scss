@@ -1,0 +1,142 @@
+.footer {
+  padding-top: 40px;
+
+  h3 {
+    color: $darkGreenColor;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    li {
+      padding: 10px 15px;
+      position: relative;
+      @extend.flex-d;
+      gap: 10px;
+      transform: translateY(0px);
+      transition: $transtion;
+      width: fit-content;
+      color: $textColor;
+      min-width: 160px;
+      z-index: 2;
+
+      &::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background-color: $textColor;
+        position: absolute;
+        right: -5px;
+        left: auto;
+      }
+
+      &:hover {
+        &::before {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transition: $transtion;
+          padding: 10px 5px;
+          z-index: -22;
+        }
+
+        a {
+          color: #fff;
+          transition: $transtion;
+        }
+      }
+
+      a {
+        color: $textColor;
+        transition: $transtion;
+      }
+    }
+  }
+
+  form {
+    margin-bottom: 25px;
+
+    label {
+      margin-bottom: 25px
+    }
+
+    .input-wrap {
+      @extend.flex-d;
+      position: relative;
+      gap: 15px;
+
+      input {
+        min-height: 45px;
+        padding: 10px;
+        flex: 2;
+      }
+
+      input[type=submit] {
+        background-color: $darkGreenColor;
+        padding: 10px;
+        text-align: center;
+        color: #fff;
+        min-height: 45px;
+        min-width: 125px;
+        flex: 1;
+        transition: $transtion;
+        @extend.green-btn;
+      }
+    }
+  }
+
+  .social-links {
+    @extend.flex-d;
+    gap: 15px;
+
+    li {
+      min-width: auto;
+      padding: 0;
+
+      &::before {
+        content: none;
+      }
+
+      a {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        @extend.flex-d;
+        justify-content: center;
+        transition: $transtion;
+
+        svg {
+          color: $darkGreenColor;
+          font-size: 18px;
+          transition: $transtion;
+        }
+      }
+
+      &:hover {
+        a {
+          background-color: $darkGreenColor;
+          transition: $transtion;
+
+          svg {
+            color: #fff;
+            transition: $transtion;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.copyright {
+  padding: 20px 0;
+
+  .wrapper {
+    @extend.flex-d;
+    justify-content: space-between;
+    color: #fff;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'din-font';
+  src: url(./din-font.eot);
+  src: url(./din-font.eot?#iefix) format('embedded-opentype'),
+       url(./din-font.otf) format('otf'),
+       url(./din-font.svg#din-font) format('svg'),
+       url(./din-font.ttf) format('truetype'),
+       url(./din-font.woff) format('woff'),
+       url(./din-font.woff2) format('woff2');
+}

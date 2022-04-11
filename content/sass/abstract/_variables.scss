@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'din-font';
+  src: url("fonts/Din-font/din-font.eot");
+  src: url("fonts/Din-font/din-font.eot?#iefix") format('embedded-opentype'),
+    url("fonts/Din-font/din-font.otf") format('otf'),
+    url("fonts/Din-font/din-font.svg#din-font") format('svg'),
+    url("fonts/Din-font/din-font.ttf") format('truetype'),
+    url("fonts/Din-font/din-font.woff") format('woff'),
+    url("fonts/Din-font/din-font.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'geometric-font';
+  src: url('fonts/Geometric-font/geometric-font.eot');
+  src: url('fonts/Geometric-font/geometric-font.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometric-font/geometric-font.otf') format('otf'),
+    url('fonts/Geometric-font/geometric-font.svg#geometric-font') format('svg'),
+    url('fonts/Geometric-font/geometric-font.ttf') format('truetype'),
+    url('fonts/Geometric-font/geometric-font.woff') format('woff'),
+    url('fonts/Geometric-font/geometric-font.woff2') format('woff2');
+}
+
+$fontDin:'din-font';
+$fontGeometric:'geometric-font';
+$lightGreenColor:#C7E8DB;
+$darkGreenColor:#5EBC98;
+$textColor:#4B4B4B;
+$lightTextColor:#707070;
+$transtion:all .5s ease-in-out;
+$padding:40px 0;

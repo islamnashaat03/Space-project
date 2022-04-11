@@ -1,0 +1,174 @@
+@media (max-width:1920px) {
+  .nav-bar {
+    .nav-flex {
+      .toggle-btn {
+        display: none;
+      }
+    }
+  }
+
+  .contact-section {
+    .row--edit {
+      .col--edit-2 {
+        .image-wrap {
+          img {
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:992px) and (max-width:1920px) {
+  .header {
+    .header-slider {
+      .owl-dots {
+        bottom: 20%;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:1199px) {
+  .nav-bar {
+    position: relative;
+
+    .nav-flex {
+      .navbar-brand {
+        img {
+          width: 75px;
+        }
+      }
+
+      .navbar-links {
+        flex-direction: column;
+        position: absolute;
+        top: 95px;
+        background-color: #C7E8DB;
+        right: -500px;
+        visibility: hidden;
+        opacity: 0;
+        transition: $transtion;
+        padding: 20px 0;
+
+        &.active {
+          right: 0;
+          width: 100%;
+          visibility: visible;
+          opacity: 1;
+          transition: $transtion;
+          z-index: 99999;
+
+        }
+      }
+
+      .toggle-btn {
+        display: flex;
+        flex-direction: column;
+        width: 31px;
+        height: 21px;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 99999;
+
+        .bar {
+          background-color: $darkGreenColor;
+          width: 100%;
+          height: 3px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:991px) {
+  .whats-app-btn {
+    right: 10px;
+  }
+
+  .contact-section {
+    .row--edit {
+      .col--edit-2 {
+        padding-left: 1.5rem *.5;
+
+        .image-wrap {
+          img {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .course-single-page {
+    .course-single {
+      .modal {
+        .modal-dialog {
+          .modal-content {
+            border-radius: 0;
+
+            .modal-body {
+              padding: 1rem;
+
+              .col--edit-2 {
+                .image-wrap {
+                  img {
+                    border-radius: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .header {
+    .header-slider {
+      .item {
+        flex-direction: column;
+
+        .image-wrap {
+          margin-bottom: 35px;
+        }
+      }
+
+      .owl-dots {
+        bottom: -55px;
+      }
+    }
+  }
+
+  .services-section {
+    .services {
+      gap: 20px;
+    }
+  }
+
+  .footer {
+    form {
+      .input-wrap {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .polls-page {
+    .polls-section {
+      .input-wrap {
+        h3 {
+          font-size: calc((16px + (20 - 16) * ((100vw - 320px) / (1366 - 320))));
+        }
+
+        .polls {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
