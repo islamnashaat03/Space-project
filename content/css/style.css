@@ -701,9 +701,9 @@ textarea:focus {
 }
 
 .testimonials .testimonials-slider .owl-item .image-wrap {
-  height: 100%;
+  height: 400px;
+  overflow: hidden;
 }
-
 .testimonials .testimonials-slider .owl-item .image-wrap img {
   -o-object-fit: cover;
      object-fit: cover;
